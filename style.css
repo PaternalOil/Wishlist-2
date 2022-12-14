@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0%
+}
+
+.Header{
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  margin: 0%;
+  font-size: 14px;
+  color: #000000;
+}
+
+h1 span{
+  animation: bounce 4s infinite;
+}
+h1 span{ 
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.7s;
+  letter-spacing: 2px;
+  display: table-cell;
+}
+
+@keyframes bounce { 
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(-10px);
+    text-shadow: 5px 5px 25px #0c2b03ff;
+    color: #57ff29ff;
+  }
+  40% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-10px);
+    text-shadow: 5px 5px 25px #190000ff;
+    color: #ff0000ff;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+h1 span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+h1 span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 0.5s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 1s;
+}
