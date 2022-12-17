@@ -1,23 +1,28 @@
 html, body {
   height: 100%;
+  margin: 0%;
   width: 100%;
-  margin:0%
+}
+
+.canvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .Header{
-  background: #ffffff;
-  border: 2px solid #ffffff;
+  background: #121212;
+  border: 2px solid #121212;
   padding: 10px;
   margin: 0%;
   font-size: 14px;
-  color: #000000;
 }
 
 h1 span{
   animation: bounce 4s infinite;
 }
 h1 span{ 
-  color: #000000;
+  color: #ffffff;
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
@@ -33,20 +38,18 @@ h1 span{
   }
   20% {
     transform: translateY(-10px);
-    text-shadow: 5px 5px 25px #0c2b03ff;
     color: #57ff29ff;
   }
   40% {
     transform: translateY(0px);
-    opacity: 1;
+    color: #57ff29ff;
   }
   60% {
     transform: translateY(0);
-    opacity: 1;
+    color: #ffd814ff;
   }
   80% {
     transform: translateY(-10px);
-    text-shadow: 5px 5px 25px #190000ff;
     color: #ff0000ff;
   }
   100% {
@@ -80,5 +83,61 @@ h1 span:nth-child(8) {
   animation-delay: 0.8s;
 }
 h1 span:nth-child(9) {
-  animation-delay: 1s;
+  animation-delay: 0.9s;
+}
+
+p.bod{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.7s;
+  letter-spacing: 2px;
+  display: table-cell;
+}
+
+.bod{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    display: table-cell;
+}
+
+a:link {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-shadow: 0px 0px 40px #ff29d1ff ; 
+  transition-property: text-shadow;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  text-decoration: underline dotted 1px;
+}
+
+.img{  
+  margin: 1px;
+  width: 50%;
+  height: 350px;
+  position: absolute;
+  object-fit: cover;
+  object-position: middle;
+}
+.blank{
+  color: #ffffff;
+}
+
+.push{
+  height: 100%;
+}
+
+.Footer{
+  background: #121212;
+  color:#ffffff;
+  padding: 10px;
+  margin: 0%;
+  font-size: 14px;
 }
